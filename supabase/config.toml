@@ -1,0 +1,33 @@
+project_id = "wriuhkewfnceovkwmrcv"
+
+[api]
+port = 54321
+schemas = ["public", "storage", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+port = 54323
+
+[in_auth]
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["https://localhost:3000"]
+jwt_expiry = 3600
+enable_signup = true
+enable_autoconfirm = false
+min_password_length = 6
+
+[storage]
+imgproxy_http_port = 54328
+imgproxy_https_port = 54329
+
+[realtime]
+port = 54327
+
+[analytics]
+port = 54324
+的概率为true
